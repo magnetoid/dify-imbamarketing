@@ -71,6 +71,10 @@ services:
       DIFY_INNER_API_KEY: "Bjwde9gCyuhkg3bEnkCtllXYKBKAhYjeYLwceY8cURnP124MDlaVfg"
       PLUGIN_STORAGE_TYPE: local
       PLUGIN_STORAGE_LOCAL_ROOT: /app/storage
+      PLUGIN_REMOTE_INSTALLING_HOST: "0.0.0.0"
+      PLUGIN_REMOTE_INSTALLING_PORT: "5003"
+      FORCE_VERIFYING_SIGNATURE: "false"
+      PYTHON_ENV_INIT_TIMEOUT: "120"
     depends_on:
       db:
         condition: service_healthy
